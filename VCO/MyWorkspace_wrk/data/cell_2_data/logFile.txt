@@ -1,0 +1,562 @@
+
+hpeesofsim (*) 571.update1.2 Jan 27 2023, MINT version 5
+    (64-bit windows built: Fri Jan 27, 2023 11:08:56 +0000)
+
+
+***** Simulation started at Mon Jun 24 18:43:10 2024
+      Running on host: "helia"
+      In Directory: "C:\Users\User 1\OneDrive\Desktop\uni\TC\hw9\MyWorkspace_wrk\data"
+      Process ID: 8380
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 1
+
+
+CT Sweep1[1] <MyLibrary_lib:cell_2:schematic>   Vcon=(0->1.8)
+
+AC Sweep1[1].AC1[1/181] <MyLibrary_lib:cell_2:schematic>  Vcon=0  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[2/181] <MyLibrary_lib:cell_2:schematic>  Vcon=10e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[3/181] <MyLibrary_lib:cell_2:schematic>  Vcon=20e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[4/181] <MyLibrary_lib:cell_2:schematic>  Vcon=30e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[5/181] <MyLibrary_lib:cell_2:schematic>  Vcon=40e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[6/181] <MyLibrary_lib:cell_2:schematic>  Vcon=50e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[7/181] <MyLibrary_lib:cell_2:schematic>  Vcon=60e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[8/181] <MyLibrary_lib:cell_2:schematic>  Vcon=70e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[9/181] <MyLibrary_lib:cell_2:schematic>  Vcon=80e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[10/181] <MyLibrary_lib:cell_2:schematic>  Vcon=90e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[11/181] <MyLibrary_lib:cell_2:schematic>  Vcon=100e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[12/181] <MyLibrary_lib:cell_2:schematic>  Vcon=110e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[13/181] <MyLibrary_lib:cell_2:schematic>  Vcon=120e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[14/181] <MyLibrary_lib:cell_2:schematic>  Vcon=130e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[15/181] <MyLibrary_lib:cell_2:schematic>  Vcon=140e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[16/181] <MyLibrary_lib:cell_2:schematic>  Vcon=150e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[17/181] <MyLibrary_lib:cell_2:schematic>  Vcon=160e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[18/181] <MyLibrary_lib:cell_2:schematic>  Vcon=170e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[19/181] <MyLibrary_lib:cell_2:schematic>  Vcon=180e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[20/181] <MyLibrary_lib:cell_2:schematic>  Vcon=190e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[21/181] <MyLibrary_lib:cell_2:schematic>  Vcon=200e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[22/181] <MyLibrary_lib:cell_2:schematic>  Vcon=210e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[23/181] <MyLibrary_lib:cell_2:schematic>  Vcon=220e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[24/181] <MyLibrary_lib:cell_2:schematic>  Vcon=230e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[25/181] <MyLibrary_lib:cell_2:schematic>  Vcon=240e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[26/181] <MyLibrary_lib:cell_2:schematic>  Vcon=250e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[27/181] <MyLibrary_lib:cell_2:schematic>  Vcon=260e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[28/181] <MyLibrary_lib:cell_2:schematic>  Vcon=270e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[29/181] <MyLibrary_lib:cell_2:schematic>  Vcon=280e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[30/181] <MyLibrary_lib:cell_2:schematic>  Vcon=290e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[31/181] <MyLibrary_lib:cell_2:schematic>  Vcon=300e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[32/181] <MyLibrary_lib:cell_2:schematic>  Vcon=310e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[33/181] <MyLibrary_lib:cell_2:schematic>  Vcon=320e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[34/181] <MyLibrary_lib:cell_2:schematic>  Vcon=330e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[35/181] <MyLibrary_lib:cell_2:schematic>  Vcon=340e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[36/181] <MyLibrary_lib:cell_2:schematic>  Vcon=350e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[37/181] <MyLibrary_lib:cell_2:schematic>  Vcon=360e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[38/181] <MyLibrary_lib:cell_2:schematic>  Vcon=370e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[39/181] <MyLibrary_lib:cell_2:schematic>  Vcon=380e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[40/181] <MyLibrary_lib:cell_2:schematic>  Vcon=390e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[41/181] <MyLibrary_lib:cell_2:schematic>  Vcon=400e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[42/181] <MyLibrary_lib:cell_2:schematic>  Vcon=410e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[43/181] <MyLibrary_lib:cell_2:schematic>  Vcon=420e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[44/181] <MyLibrary_lib:cell_2:schematic>  Vcon=430e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[45/181] <MyLibrary_lib:cell_2:schematic>  Vcon=440e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[46/181] <MyLibrary_lib:cell_2:schematic>  Vcon=450e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[47/181] <MyLibrary_lib:cell_2:schematic>  Vcon=460e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[48/181] <MyLibrary_lib:cell_2:schematic>  Vcon=470e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[49/181] <MyLibrary_lib:cell_2:schematic>  Vcon=480e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[50/181] <MyLibrary_lib:cell_2:schematic>  Vcon=490e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[51/181] <MyLibrary_lib:cell_2:schematic>  Vcon=500e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[52/181] <MyLibrary_lib:cell_2:schematic>  Vcon=510e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[53/181] <MyLibrary_lib:cell_2:schematic>  Vcon=520e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[54/181] <MyLibrary_lib:cell_2:schematic>  Vcon=530e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[55/181] <MyLibrary_lib:cell_2:schematic>  Vcon=540e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[56/181] <MyLibrary_lib:cell_2:schematic>  Vcon=550e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[57/181] <MyLibrary_lib:cell_2:schematic>  Vcon=560e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[58/181] <MyLibrary_lib:cell_2:schematic>  Vcon=570e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[59/181] <MyLibrary_lib:cell_2:schematic>  Vcon=580e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[60/181] <MyLibrary_lib:cell_2:schematic>  Vcon=590e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[61/181] <MyLibrary_lib:cell_2:schematic>  Vcon=600e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[62/181] <MyLibrary_lib:cell_2:schematic>  Vcon=610e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[63/181] <MyLibrary_lib:cell_2:schematic>  Vcon=620e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[64/181] <MyLibrary_lib:cell_2:schematic>  Vcon=630e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[65/181] <MyLibrary_lib:cell_2:schematic>  Vcon=640e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[66/181] <MyLibrary_lib:cell_2:schematic>  Vcon=650e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[67/181] <MyLibrary_lib:cell_2:schematic>  Vcon=660e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[68/181] <MyLibrary_lib:cell_2:schematic>  Vcon=670e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[69/181] <MyLibrary_lib:cell_2:schematic>  Vcon=680e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[70/181] <MyLibrary_lib:cell_2:schematic>  Vcon=690e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[71/181] <MyLibrary_lib:cell_2:schematic>  Vcon=700e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[72/181] <MyLibrary_lib:cell_2:schematic>  Vcon=710e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[73/181] <MyLibrary_lib:cell_2:schematic>  Vcon=720e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[74/181] <MyLibrary_lib:cell_2:schematic>  Vcon=730e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[75/181] <MyLibrary_lib:cell_2:schematic>  Vcon=740e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[76/181] <MyLibrary_lib:cell_2:schematic>  Vcon=750e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[77/181] <MyLibrary_lib:cell_2:schematic>  Vcon=760e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[78/181] <MyLibrary_lib:cell_2:schematic>  Vcon=770e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[79/181] <MyLibrary_lib:cell_2:schematic>  Vcon=780e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[80/181] <MyLibrary_lib:cell_2:schematic>  Vcon=790e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[81/181] <MyLibrary_lib:cell_2:schematic>  Vcon=800e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[82/181] <MyLibrary_lib:cell_2:schematic>  Vcon=810e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[83/181] <MyLibrary_lib:cell_2:schematic>  Vcon=820e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[84/181] <MyLibrary_lib:cell_2:schematic>  Vcon=830e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[85/181] <MyLibrary_lib:cell_2:schematic>  Vcon=840e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[86/181] <MyLibrary_lib:cell_2:schematic>  Vcon=850e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[87/181] <MyLibrary_lib:cell_2:schematic>  Vcon=860e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[88/181] <MyLibrary_lib:cell_2:schematic>  Vcon=870e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[89/181] <MyLibrary_lib:cell_2:schematic>  Vcon=880e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[90/181] <MyLibrary_lib:cell_2:schematic>  Vcon=890e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[91/181] <MyLibrary_lib:cell_2:schematic>  Vcon=900e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[92/181] <MyLibrary_lib:cell_2:schematic>  Vcon=910e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[93/181] <MyLibrary_lib:cell_2:schematic>  Vcon=920e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[94/181] <MyLibrary_lib:cell_2:schematic>  Vcon=930e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[95/181] <MyLibrary_lib:cell_2:schematic>  Vcon=940e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[96/181] <MyLibrary_lib:cell_2:schematic>  Vcon=950e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[97/181] <MyLibrary_lib:cell_2:schematic>  Vcon=960e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[98/181] <MyLibrary_lib:cell_2:schematic>  Vcon=970e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[99/181] <MyLibrary_lib:cell_2:schematic>  Vcon=980e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[100/181] <MyLibrary_lib:cell_2:schematic>  Vcon=990e-03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[101/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[102/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.01  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[103/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.02  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[104/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.03  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[105/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.04  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[106/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.05  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[107/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.06  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[108/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.07  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[109/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.08  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[110/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.09  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[111/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.1  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[112/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.11  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[113/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.12  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[114/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.13  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[115/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.14  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[116/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.15  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[117/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.16  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[118/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.17  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[119/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.18  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[120/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.19  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[121/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.2  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[122/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.21  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[123/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.22  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[124/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.23  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[125/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.24  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[126/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.25  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[127/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.26  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[128/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.27  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[129/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.28  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[130/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.29  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[131/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.3  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[132/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.31  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[133/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.32  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[134/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.33  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[135/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.34  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[136/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.35  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[137/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.36  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[138/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.37  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[139/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.38  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[140/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.39  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[141/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.4  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[142/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.41  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[143/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.42  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[144/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.43  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[145/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.44  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[146/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.45  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[147/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.46  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[148/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.47  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[149/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.48  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[150/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.49  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[151/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.5  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[152/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.51  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[153/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.52  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[154/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.53  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[155/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.54  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[156/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.55  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[157/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.56  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[158/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.57  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[159/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.58  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[160/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.59  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[161/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.6  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[162/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.61  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[163/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.62  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[164/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.63  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[165/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.64  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[166/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.65  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[167/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.66  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[168/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.67  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[169/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.68  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[170/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.69  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[171/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.7  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[172/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.71  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[173/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.72  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[174/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.73  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[175/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.74  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[176/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.75  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[177/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.76  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[178/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.77  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[179/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.78  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[180/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.79  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[181/181] <MyLibrary_lib:cell_2:schematic>  Vcon=1.8  freq=2.1 GHz
+
+
+Resource usage:
+  Total stopwatch time     =     0.50 seconds.
+

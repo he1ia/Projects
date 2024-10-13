@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dc_annotation_options>
+ <options ToggleVoltage="true" cell="mixer" library="miniproject2_lib" ToggleCurrent="false" view="schematic"/>
+</dc_annotation_options>

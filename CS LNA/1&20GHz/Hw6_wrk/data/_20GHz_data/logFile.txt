@@ -1,0 +1,55 @@
+
+hpeesofsim (*) 571.update1.2 Jan 27 2023, MINT version 5
+    (64-bit windows built: Fri Jan 27, 2023 11:08:56 +0000)
+
+
+***** Simulation started at Fri May 17 21:28:07 2024
+      Running on host: "helia"
+      In Directory: "C:\Users\User 1\OneDrive\Desktop\uni\TC\hw6\Hw6_wrk\data"
+      Process ID: 16244
+
+
+HB HB2[1] <Hw6_lib:20GHz:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (HB problem size): 220.
+    Number of SS/noise equations (SS/noise problem size): 440.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	99.1791 uA  	100.0             
+1.0 	6.01331 uA  	100.0	3.20346 mV   
+1.1 	1.22755 uA  	100.0	601.292 uV   
+1.2 	249.242 nA  	100.0	115.322 uV   
+1.3 	47.2378 nA  	100.0	21.3347 uV   
+1.4 	8.74216 nA  	100.0	3.88303 uV   
+1.5 	1.59116 nA  	100.0	697.774 nV   
+Warning detected by hpeesofsim during HB analysis `HB2'.
+    No noise to simulate for NoiseCon `NC2'
+
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X1.MOSFET1.s            4.537e-06       >       1.010e-06
+N__6                    1.992e-06       >       1.038e-06
+
+o Number of waveforms violating the HB truncation error check:
+        2 out of 8 waveforms.
+o Estimated max HB truncation error: 4.537e-06 @ waveform X1.MOSFET1.s .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.010e-06 for this waveform.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     0.52 seconds.
+

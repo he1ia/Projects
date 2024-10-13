@@ -1,0 +1,71 @@
+
+hpeesofsim (*) 571.update1.2 Jan 27 2023, MINT version 5
+    (64-bit windows built: Fri Jan 27, 2023 11:08:56 +0000)
+
+
+***** Simulation started at Sat Jun 29 23:32:11 2024
+      Running on host: "helia"
+      In Directory: "C:\Users\User 1\OneDrive\Desktop\uni\RFIC\project2_wrk\data"
+      Process ID: 2852
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 2
+
+
+HB HB2[1] <miniproject2_lib:connected:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (HB problem size): 539.
+    Number of SS/noise equations (SS/noise problem size): 1078.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	4.4529 A    	100.0             
+1.0 	13.713 mA   	100.0	3.57155 V    
+        Samanskii-Newton iteration failed
+1.1*	13.713 mA   	100.0	2.5319 V     
+2.0*	13.713 mA   	 50.0	2.5319 V     
+3.0*	7.06006 mA  	100.0	604.986 mV   
+4.0 	986.427 uA  	100.0	244.941 mV   
+4.1 	650.991 uA  	100.0	64.5792 mV   
+4.2 	343.422 uA  	100.0	41.5036 mV   
+4.3 	236.641 uA  	100.0	25.6992 mV   
+4.4*	166.813 uA  	100.0	61.8369 mV   
+5.0 	5.16505 uA  	100.0	692.526 uV   
+5.1 	147.945 nA  	100.0	28.1996 uV   
+5.2 	5.89081 nA  	100.0	978.623 nV   
+5.3 	208.476 pA  	100.0	35.2764 nV   
+Warning detected by hpeesofsim during HB analysis `HB2'.
+    No noise to simulate for NoiseCon `NC2'
+
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+N__20                   4.343e-03       >       1.573e-06
+N__23                   4.343e-03       >       1.573e-06
+X12.MOSFET1.d           1.452e-03       >       1.037e-06
+X9.MOSFET1.s            1.452e-03       >       1.037e-06
+X8.MOSFET1.s            1.440e-03       >       1.037e-06
+
+o Number of waveforms violating the HB truncation error check:
+        11 out of 27 waveforms.
+o Estimated max HB truncation error: 4.343e-03 @ waveform N__23 .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.573e-06 for this waveform.
+o A time-domain plot of the X8.MOSFET1.d waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     0.62 seconds.
+

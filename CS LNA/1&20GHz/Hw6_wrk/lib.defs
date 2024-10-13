@@ -1,0 +1,5 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE Hw6_lib Hw6_lib
+ASSIGN Hw6_lib libMode shared
+INCLUDE $HOME/OneDrive/Desktop/uni/TC/tsmc18rf_converted/lib.defs

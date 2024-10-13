@@ -1,0 +1,123 @@
+
+hpeesofsim (*) 571.update1.2 Jan 27 2023, MINT version 5
+    (64-bit windows built: Fri Jan 27, 2023 11:08:56 +0000)
+
+
+***** Simulation started at Sat Jun 29 23:29:32 2024
+      Running on host: "helia"
+      In Directory: "C:\Users\User 1\OneDrive\Desktop\uni\RFIC\miniproject2_wrk\data"
+      Process ID: 10768
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with no DC path to ground (topology corrected): 2
+
+
+HB HB1[1] <miniproject2_lib:mixer:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (HB problem size): 253.
+    Number of SS/noise equations (SS/noise problem size): 506.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	4.4529 A    	100.0             
+1.0*	4.4529 A    	 50.0	3.64933 V    
+2.0*	2.24184 A   	 50.0	4.10411 V    
+3.0 	1.12897 A   	 50.0	4.35775 V    
+3.1 	573.637 mA  	 50.0	6.27657 V    
+3.2 	296.465 mA  	 50.0	6.88087 V    
+3.3 	160.249 mA  	 50.0	9.25852 V    
+3.4 	117.941 mA  	 12.5	60.0319 V    
+3.5*	102.068 mA  	 25.0	5.19323 V    
+4.0 	76.1369 mA  	 50.0	3.53702 V    
+4.1 	42.8279 mA  	100.0	4.68984 V    
+4.2 	17.8742 mA  	 50.0	5.70303 V    
+4.3 	13.005 mA   	 50.0	3.09134 V    
+4.4 	9.52787 mA  	 50.0	1.32542 V    
+4.5 	8.88703 mA  	100.0	1.2797 V     
+4.6*	8.4365 mA   	 50.0	2.8468 V     
+5.0 	4.39427 mA  	 25.0	1.44633 V    
+5.1 	3.77919 mA  	 50.0	1.07672 V    
+5.2 	3.61365 mA  	 25.0	1.12955 V    
+5.3*	2.5996 mA   	 50.0	273.878 mV   
+6.0 	1.30964 mA  	100.0	150.314 mV   
+6.1 	198.113 uA  	100.0	35.2019 mV   
+6.2 	112.073 uA  	100.0	15.3169 mV   
+6.3 	44.9357 uA  	100.0	6.36648 mV   
+6.4 	18.5735 uA  	100.0	2.84152 mV   
+6.5 	7.40295 uA  	100.0	1.169 mV     
+6.6 	2.83259 uA  	100.0	459.911 uV   
+6.7 	1.04584 uA  	100.0	173.016 uV   
+6.8 	376.5 nA    	100.0	63.3488 uV   
+6.9 	133.203 nA  	100.0	22.6588 uV   
+6.10 	46.5177 nA  	100.0	7.97343 uV   
+6.11*	16.0927 nA  	100.0	4.22576 uV   
+7.0 	211.905 fA  	100.0	1.95158 uV   
+7.1 	4.13548 fA  	100.0	108.42 nV    
+
+NC1 HB1[1] <miniproject2_lib:mixer:schematic>
+Warning detected by hpeesofsim during spectral noise analysis `NC1'.
+    The global circuit temperature (25 C or 298.15 K) and the IEEE standard
+    noise temperature (16.85 C or 290 K) do not agree in the spectral noise
+    analysis `HB1'.  As a result, the signal-to-noise ratio loss at the
+    the circuit temperature and the noise figure, defined and calculated
+    at the standard noise temperature, might not agree as well.  The `Temp'
+    parameter on the `Options' item (25 C) can be set to 16.85 C to eliminate
+    this discrepancy.
+
+Warning detected by hpeesofsim during spectral noise analysis `NC1'.
+    Given a set of Harmonic Balance large-signal frequencies LSfreq
+    (determined by Freq[], Order[] and MaxOrder) and a noise frequency
+    FreqForNoise, the small-signal frequencies used in a nonlinear noise
+    analysis are SSfreq=LSfreq+FreqForNoise and SSfreq=LSfreq-FreqForNoise.
+    For this circuit, more than one such small-signal frequency differs
+    from InputFreq by less than BandwidthForNoise. This means that the
+    simulator is unable to uniquely determine what small-signal tone
+    should be used for computing the small-signal conversion gains needed
+    for the evaluation of NFssb and NFdsb. The small-signal frequency
+    corresponding to the large-signal frequency with the lowest order will
+    be used. In rare cases, NFssb and NFdsb are inaccurate. To eliminate
+    this warning and the possibility of inaccurate results:
+     o Reduce Order[] or MaxOrder to eliminate a conflicting large-signal
+       frequency
+     o Offset FreqForNoise and InputFreq by a small amount, like 1-2 Hz.
+     o Offset one of the fundamental frequencies by a small amount, like
+       1-2 Hz.
+     o Eliminate any colliding tones in your Harmonic Balance setup,
+       if present.
+
+
+    Noise Freq=947.5 MHz  NFssb=39.03 dB  NFdsb=39.03 dB  NFasb=5.62 dB  Conv Gain=-9.37 dB
+    Voltage Gain=-15.17 dB  Current Gain=8.48 dB  Power Gain=-3.35 dB
+    Noise Output=1.159e-08 V/Hz^(1/2)  Added Noise=1.159e-08 V/Hz^(1/2)
+An HB truncation error may be present.
+o The HB truncation error is due to using a finite order 
+  (number of harmonics) in the representation of the
+  circuit signals.
+
+Waveform                Trunc error             Tolerance
+---------------------------------------------------------
+X2.MOSFET1.d            5.781e-03       >       1.368e-06
+X4.MOSFET1.s            5.780e-03       >       1.368e-06
+X3.MOSFET1.d            5.735e-03       >       1.363e-06
+X5.MOSFET1.s            5.734e-03       >       1.363e-06
+N__7                    4.343e-03       >       1.573e-06
+
+o Number of waveforms violating the HB truncation error check:
+        10 out of 13 waveforms.
+o Estimated max HB truncation error: 5.781e-03 @ waveform X2.MOSFET1.d .
+o The maximal HB truncation error estimate is greater than the 
+  achieved tolerance of 1.368e-06 for this waveform.
+o A time-domain plot of the N__9 waveform may show the error as 
+  Gibbs ripples.
+o To reduce the error, increase the order (number of harmonics) 
+  and re-simulate.
+
+Resource usage:
+  Total stopwatch time     =     1.83 seconds.
+

@@ -1,0 +1,40 @@
+
+hpeesofsim (*) 571.update1.2 Jan 27 2023, MINT version 5
+    (64-bit windows built: Fri Jan 27, 2023 11:08:56 +0000)
+
+
+***** Simulation started at Mon Jun 24 12:54:35 2024
+      Running on host: "helia"
+      In Directory: "C:\Users\User 1\OneDrive\Desktop\uni\TC\hw9\MyWorkspace_wrk\data"
+      Process ID: 23040
+
+
+CT Sweep1[1] <MyLibrary_lib:cell_1:schematic>   n=(1->8)
+
+AC Sweep1[1].AC1[1/8] <MyLibrary_lib:cell_1:schematic>  n=1  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[2/8] <MyLibrary_lib:cell_1:schematic>  n=2  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[3/8] <MyLibrary_lib:cell_1:schematic>  n=3  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[4/8] <MyLibrary_lib:cell_1:schematic>  n=4  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[5/8] <MyLibrary_lib:cell_1:schematic>  n=5  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[6/8] <MyLibrary_lib:cell_1:schematic>  n=6  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[7/8] <MyLibrary_lib:cell_1:schematic>  n=7  freq=2.1 GHz
+
+
+AC Sweep1[1].AC1[8/8] <MyLibrary_lib:cell_1:schematic>  n=8  freq=2.1 GHz
+
+
+Resource usage:
+  Total stopwatch time     =     1.55 seconds.
+

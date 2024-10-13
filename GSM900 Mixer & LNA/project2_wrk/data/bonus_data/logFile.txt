@@ -1,0 +1,58 @@
+
+hpeesofsim (*) 571.update1.2 Jan 27 2023, MINT version 5
+    (64-bit windows built: Fri Jan 27, 2023 11:08:56 +0000)
+
+
+***** Simulation started at Sat May 18 14:25:02 2024
+      Running on host: "helia"
+      In Directory: "C:\Users\User 1\OneDrive\Desktop\uni\RFIC\miniproject2_wrk\data"
+      Process ID: 14080
+
+Warning detected by hpeesofsim in topology check during circuit set up.
+    Number of nodes with only one device attached (topology corrected): 3
+    Number of nodes with no DC path to ground (topology corrected): 3
+
+
+HB HB2[1] <miniproject2_lib:bonus:schematic>
+    Number of tones:   1.
+    Number of frequencies:   6.
+    Number of time samples:  16.
+    Number of HB equations (problem size): 264.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	13.9402 uA  	100.0             
+1.0 	3.71169 nA  	100.0	279.074 nV   
+
+HB HB2[1] <miniproject2_lib:bonus:schematic>
+    Number of tones:   2.
+    Number of frequencies:   23.
+    Number of time samples:  128.
+    Number of HB equations (HB problem size): 1080.
+    Number of SS/noise equations (SS/noise problem size): 2160.
+    Auto mode: on.
+    Convergence mode: Auto.
+    Linear solver: direct.
+------------------------------------------------------------------------------
+Newton solver:					
+Iter	KCL residual	Damp %	Sol update
+------------------------------------------------------------------------------
+0.0*	5 mA        	100.0             
+1.0 	40.2557 uA  	100.0	2.76475 mV   
+1.1 	1.78893 uA  	100.0	133.55 uV    
+1.2 	66.5647 nA  	100.0	5.01665 uV   
+1.3 	2.36687 nA  	100.0	179.031 nV   
+Warning detected by hpeesofsim during HB analysis `HB2'.
+    No noise to simulate for NoiseCon `NC2'
+
+
+AC AC1[1] <miniproject2_lib:bonus:schematic>   freq=(100 MHz->12 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     0.51 seconds.
+

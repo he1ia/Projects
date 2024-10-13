@@ -1,0 +1,89 @@
+; Top Design: "Hw6_lib:first_try_1GHz:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Hw6_lib:first_try_1GHz:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=4
+; Library Name: TSMC18RF
+; Cell Name: nmos2v
+; View Name: schematic
+define nmos2v ( P1  P2  P3  P4 ) 
+parameters  m=1  l=180n  w=2u 
+"nch":MOSFET1  P1 P2 P3 P4 Length=l Width=w Mode=1 Noise=yes _M=m 
+end nmos2v
+
+L:L3  N__12 N__16 L=Lg Noise=yes  
+C:C1  0 N__15 C=10 uF 
+nmos2v:X1  N__7 N__16 N__11 0 m=1 l=180n w=w1 u 
+V_Source:SRC1  N__14 0 Type="V_DC" Vdc=1.8 V SaveCurrent=1 
+R:R6  N__16 N__15 R=20 kOhm Noise=yes 
+I_Source:SRC2  Vdd N__15 Type="I_DC" Idc=id*0.1 mA 
+C:C4  N__16 N__11 C=Cgs f 
+
+id=1
+f1=1.005G
+Cgs=320
+vin=0.01
+L1=15n
+Ls=1n
+Lg=65n
+Q=10
+Qo=100
+w1=31.17
+f=1G
+#ifndef tsmc18rf_inc_mcorner
+#define tsmc18rf_inc_mcorner
+#include "C:/Users/User 1/OneDrive/Desktop/uni/TC/tsmc18rf_converted//circuit/models/tt_include.net"
+#endif
+#ifndef tsmc18rf_inc_mmodel
+#define tsmc18rf_inc_mmodel
+#include "C:/Users/User 1/OneDrive/Desktop/uni/TC/tsmc18rf_converted//circuit/models/rf018.net"
+#endif
+C:C3  Vdd Vout C=1.65 pF 
+C:C5  N__10 N__12 C=10 uF 
+nmos2v:X2  N__15 N__15 0 0 m=1 l=180n w=0.1*w1 u 
+Short:R5  Vin N__10 Mode=0 SaveCurrent=no
+R:R7  N__11 0 R=Ls*2*pi*f*Q Noise=yes 
+#uselib "ckt" , "P_Probe"
+P_Probe:P_Probe1  N__14 Vdd 
+R:R2  Vdd Vout R=0.5 kOhm Noise=yes 
+L:L1  N__11 0 L=Ls Noise=yes  
+L:L2  Vdd Vout L=L1 Noise=yes  
+
+Noisecon:NC2 InputFreq=noisefreq NoiseFreqPlan="NC2_nl_stim" \
+NoiseInputPort=1 NoiseOutputPort=2 PhaseNoise=0 SortNoise=0 \
+IncludePortNoise=yes \
+BandwidthForNoise=1.0 Hz 
+                        SweepPlan: NC2_nl_stim Start=0.1 GHz Stop=2 GHz Step=0.01 GHz 
+                        
+nmos2v:X3  Vout Vdd N__7 0 m=1 l=180n w=w1 u 
+#uselib "ckt" , "VCVS"
+VCVS:SRC3  Vout 0 N__8 N__9 G=1 T=0.0 nsec R1=1e100 Ohm R2=0 Ohm F=0.0 GHz 
+HB:HB2 MaxOrder=4 Freq[1]=f Freq[2]=f1 Order[1]=5 Order[2]=5 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB2_Output" Noisecon[1]="NC2" 
+
+OutputPlan:HB2_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB2_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=f Order[1]=5 
+
+Component:tahb_HB2 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB2_tran" HB_Analysis="HB2" 
+
+Port:TermG1  Vin 0 Num=1 Z=50 Ohm Noise=yes 
+Port:Term2  N__8 N__9 Num=2 Z=50 Ohm Noise=yes 
+R:R8  Vdd Vout R=L1*2*pi*f*Qo Noise=yes 
+R:R9  N__12 N__16 R=Lg*2*pi*f*Qo Noise=yes 
