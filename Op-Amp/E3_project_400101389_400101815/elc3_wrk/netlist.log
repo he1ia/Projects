@@ -1,0 +1,131 @@
+; Top Design: "elc3_lib:proj:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="elc3_lib:proj:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=4
+; Library Name: TSMC18RF
+; Cell Name: nmos2v
+; View Name: schematic
+define nmos2v ( P1  P2  P3  P4 ) 
+parameters  m=1  l=180n  w=2u 
+"nch":MOSFET1  P1 P2 P3 P4 Length=l Width=w Mode=1 Noise=yes _M=m 
+end nmos2v
+
+; Library Name: TSMC18RF
+; Cell Name: pmos2v
+; View Name: schematic
+define pmos2v ( P1  P2  P3  P4 ) 
+parameters  m=1  l=180n  w=2u 
+"pch":MOSFET1  P1 P2 P3 P4 Length=l Width=w Mode=1 Noise=yes _M=m 
+end pmos2v
+
+#ifndef tsmc18rf_inc_mcorner
+#define tsmc18rf_inc_mcorner
+#include "C:/Users/User 1/OneDrive/Desktop/uni/E3/tsmc18rf_converted//circuit/models/tt_include.net"
+#endif
+#ifndef tsmc18rf_inc_mmodel
+#define tsmc18rf_inc_mmodel
+#include "C:/Users/User 1/OneDrive/Desktop/uni/E3/tsmc18rf_converted//circuit/models/rf018.net"
+#endif
+nmos2v:X7  N__13 N__13 0 0 m=1 l=L n w=w2 u 
+nmos2v:X5  N__15 N__15 N__13 0 m=1 l=L n w=w2 u 
+nmos2v:X2  y in N__9 0 m=1 l=L n w=w2 u 
+nmos2v:X12  N__9 m 0 0 m=1 l=180n w=w3 u 
+nmos2v:X1  x N__11 N__9 0 m=1 l=L n w=w2 u 
+nmos2v:X11  m m 0 0 m=1 l=180n w=w3 u 
+nmos2v:X13  out m 0 0 m=1 l=800n w=239.58u 
+nmos2v:X8  N__16 N__13 0 0 m=1 l=L n w=w2 u 
+nmos2v:X6  out1 N__15 N__16 0 m=1 l=L n w=w2 u 
+pmos2v:X3  N__15 1 x vdd m=1 l=L n w=w1 u 
+pmos2v:X15  x n vdd vdd m=1 l=L n w=36*n u 
+pmos2v:X14  n n vdd vdd m=1 l=180n w=36u 
+pmos2v:X16  y n vdd vdd m=1 l=L n w=36*n u 
+pmos2v:X9  out out1 vdd vdd m=1 l=180n w=500u 
+pmos2v:X4  out1 1 y vdd m=1 l=L n w=w1 u 
+V_Source:SRC2  in N__10 Type="V_DC" Vdc=X SaveCurrent=1 
+V_Source:SRC1  N__11 yy Type="V_DC" Vdc=X SaveCurrent=1 
+V_Source:SRC6  xx 0 Type="V_DC" Vdc=0.875 V SaveCurrent=1 
+V_Source:SRC4  N__21 0 Type="V_DC" Vdc=1.8 V SaveCurrent=1 
+I_Source:SRC3  vdd m Type="I_DC" Idc=id uA 
+Port:Term2  N__25 N__26 Num=2 Z=50 Ohm Noise=yes 
+R:R3  n 0 R=57.5k Noise=yes 
+R:R1  vdd 1 R=160 kOhm Noise=yes 
+R:R2  1 0 R=200 kOhm Noise=yes 
+R:R4  N__17 out R=0.9 kOhm Noise=yes 
+V_Source:SRC8  N__10 N__22 Type="V_AC" Vdc=0.0 V Vac=polar(1,0) V Freq=100 V_Noise=0 uV SaveCurrent=1 
+C:C2  0 N__20 C=100 F 
+C:C3  0 out C=1 pF 
+C:C4  out1 N__17 C=1.5 pF 
+AC:AC1 CalcNoise=yes NoiseNode[1]="out" NoiseNode[2]="in" SortNoise=0 IncludePortNoise=yes BandwidthForNoise=1 Hz FreqConversion=no UseFiniteDiff=no StatusLevel=2 OutputBudgetIV=no DevOpPtLevel=4 \
+SweepVar="freq" SweepPlan="AC1_stim" OutputPlan="AC1_Output" 
+
+SweepPlan: AC1_stim Start=10 Hz Stop=10.0 GHz Dec=100 
+
+OutputPlan:AC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+#uselib "ckt" , "VCVS"
+VCVS:SRC7  out xx N__20 0 G=1 T=0.0 nsec R1=1e100 Ohm R2=1 kOhm F=0.0 GHz 
+#uselib "ckt" , "VCVS"
+VCVS:SRC11  N__20 0 yy 0 G=1 T=0.0 nsec R1=1e100 Ohm R2=0 Ohm F=0.0 GHz 
+Short:SRC12  N__8 N__23 Mode=0 SaveCurrent=no
+
+L=460
+n=16
+id=20*n
+w1=18*n
+w2=5.76*n
+w3=11.52
+X=1.2
+Short:I_Probe2  vdd N__21 Mode=0 SaveCurrent=yes 
+Short:SRC10  N__22 N__8 Mode=0 SaveCurrent=no
+HB:HB1 MaxOrder=4 Freq[1]=1.0 GHz Order[1]=5 StatusLevel=2 HBSS_WSP=0 OutputPlan="HB1_Output" Noisecon[1]="NC1" 
+
+OutputPlan:HB1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+Tran:HB1_tran HB_Sol=1 SteadyState=1 StatusLevel=3 \
+Freq[1]=1.0 GHz Order[1]=5 
+
+Component:tahb_HB1 Module="ATAHB" Type="ModelExtractor" \ 
+ Tran_Analysis="HB1_tran" HB_Analysis="HB1" 
+
+
+Noisecon:NC1 InputFreq=noisefreq NoiseFreqPlan="NC1_nl_stim" \
+NoiseInputPort=1 NoiseOutputPort=2 PhaseNoise=0 SortNoise=0 \
+IncludePortNoise=yes \
+BandwidthForNoise=1.0 Hz 
+                        SweepPlan: NC1_nl_stim Start=10 Hz Stop=10.0 GHz Dec=100 
+                        
+Port:Term1  N__23 0 Num=1 Z=50 Ohm Noise=yes 
+#uselib "ckt" , "VCVS"
+VCVS:SRC13  out 0 N__25 N__26 G=1 T=0.0 nsec R1=1e100 Ohm R2=1 kOhm F=0.0 GHz 

@@ -1,0 +1,7 @@
+INCLUDE $HPEESOF_DIR/oalibs/analog_rf.defs
+INCLUDE $HPEESOF_DIR/oalibs/dsp.defs
+DEFINE elc3_lib elc3_lib
+ASSIGN elc3_lib libMode shared
+INCLUDE ../Desktop/tsmc18rf_converted/lib.defs
+INCLUDE $HOME/OneDrive/Desktop/uni/TC/tsmc18rf_converted/lib.defs
+INCLUDE $HOME/OneDrive/Desktop/uni/E3/tsmc18rf_converted/lib.defs
