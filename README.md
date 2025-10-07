@@ -1,4 +1,7 @@
 # Projects
+## Fall 2024
+### RF Amplifier Layout
+### Toxic Gas Detection
 ## Spring 2024:
 ### GSM900 LNA & Mixer
 ### CG LNA
