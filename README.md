@@ -1,4 +1,8 @@
 # Projects
+## Fall 2025
+### Determinant Calculator ASIC
+## Spring 2025
+### Temperature Control of Microfluidic Chip
 ## Fall 2024
 ### RF Amplifier Layout
 ### Toxic Gas Detection
